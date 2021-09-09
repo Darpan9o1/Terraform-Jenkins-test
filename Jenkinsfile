@@ -18,7 +18,7 @@ pipeline {
       steps {
         sh 'chmod +x terraformw'
         sh './terraformw init'
-        sh 'terraform apply -auto-approve -no-color'
+        sh './terraformw apply -auto-approve -no-color'
       }
     }
   }
