@@ -17,7 +17,7 @@ pipeline {
     stage('terraform') {
       steps {
         sh 'chmod +x terraformw'
-        sh 'sudo ./terraformw init'
+        sh './terraformw init'
         sh 'terraform apply -auto-approve -no-color'
       }
     }
